@@ -1,0 +1,25 @@
+{
+  "name": "vscode-react-native-snippets-devizer",
+  "displayName": "vscode-react-native-snippets-devizer",
+  "description": "VS Code snippets for React Native by Devizer.",
+  "version": "1.1.0",
+  "publisher": "devizerio",
+  "engines": {
+    "vscode": "^1.18.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "javascript",
+        "path": "./snippets/snippets.json"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/snippets.json"
+      }
+    ]
+  }
+}
