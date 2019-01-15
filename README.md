@@ -17,6 +17,7 @@
 | `ss`            | setState                                               |
 | `ptp`           | Imports prop-types                                     |
 | `imicon`        | Imports Expo vector icons                              |
+| `imtst`         | Imports theme from styled-tools                        |
 | `exportconnect` | Export default connect from react-redux                |
 | `bind`          | Bind this to member function                           |
 | `cl`            | Console log                                            |
@@ -25,10 +26,14 @@
 
 Users appreciate release notes as you update your extension.
 
+### 1.1.1
+
+Added `imtst`.
+
 ### 1.1.0
 
 Added `ss`, `ptp` and `imicon`.
-Fixed `mstp` and `mdtp` to include `const`;
+Fixed `mstp` and `mdtp` to include `const`.
 
 ### 1.0.0
 

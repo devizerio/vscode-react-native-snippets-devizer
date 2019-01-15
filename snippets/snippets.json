@@ -74,6 +74,11 @@
     "body": "import { ${0} } from '@expo/vector-icons';",
     "description": "Import @expo/vector-icons"
   },
+  "styledTools": {
+    "prefix": "imtst",
+    "body": "import { theme } from 'styled-tools';",
+    "description": "Import { theme } from 'styled-tools'"
+  },
   "exportConnect": {
     "prefix": "exportconnect",
     "body": "export default connect(mapStateToProps, mapDispatchToProps)($0);",
