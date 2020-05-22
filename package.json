@@ -10,6 +10,8 @@
   "categories": [
     "Snippets"
   ],
+  "icon": "./devizer.png",
+  "repository": "https://github.com/devizerio/vscode-react-native-snippets-devizer",
   "contributes": {
     "snippets": [
       {
