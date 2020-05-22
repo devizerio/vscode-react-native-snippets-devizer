@@ -1,27 +1,12 @@
 {
   "reactNativeComponent": {
     "prefix": "rncomp",
-    "body": "import React, { Component } from 'react';\nimport styled from 'styled-components';\nimport { View }  from 'react-native';\n\nclass ${1:${TM_FILENAME_BASE}} extends Component {\n\n\trender() {\n\t\treturn (\n\t\t\t<View />\n\t\t);\n\t}\n\n}\n\nexport default ${1:${TM_FILENAME_BASE}};",
+    "body": "import React from 'react'\n\ntype Props = {}\n\nconst ${1:${TM_FILENAME_BASE}}: React.FC<Props> = () => {\n  return null\n}\n\nexport { ${1:${TM_FILENAME_BASE}} }",
     "description": "Creates a React Native component"
-  },
-  "reactNativeReduxComponent": {
-    "prefix": "reduxrncomp",
-    "body": "import React, { Component } from 'react';\nimport styled from 'styled-components';\nimport { connect } from 'react-redux';\nimport { View }  from 'react-native';\n\nclass ${1:${TM_FILENAME_BASE}} extends Component {\n\n\trender() {\n\t\treturn (\n\t\t\t<View />\n\t\t);\n\t}\n\n}\n\nmapStateToProps = (state) => ({\n\t\n});\n\nmapDispatchToProps = (dispatch) => ({\n\t\n});\n\nexport default connect(tmapStateToProps,mapDispatchToProps)(${1:${TM_FILENAME_BASE}});",
-    "description": "Creates a React Native component connected to redux"
-  },
-  "reactNativeSceneComponent": {
-    "prefix": "scenecomp",
-    "body": "import React from 'react';\nimport styled from 'styled-components/native';\nimport { connect } from 'react-redux';\nimport SceneContainer from 'components/SceneContainer';\n\nclass ${1:${TM_FILENAME_BASE}} extends React.Component {\n\n\trender() {\n\t\treturn (\n\t\t\t<SceneContainer>\n\n\t\t\t</SceneContainer>\n\t\t);\n\t}\n\n}\n\nconst mapStateToProps = state => ({\n\t\n});\n\nconst mapDispatchToProps = dispatch => ({\n\t\n});\n\nexport default connect(mapStateToProps, mapDispatchToProps)(${1:${TM_FILENAME_BASE}});",
-    "description": "Creates a React Native Scene connected to redux"
-  },
-  "bindThis": {
-    "prefix": "bnd",
-    "body": "this.$1 = this.$1.bind(this);$0",
-    "description": "Binds the this of a method. To be used inside a constructor"
   },
   "importStyled": {
     "prefix": "ims",
-    "body": "import styled from 'styled-components';",
+    "body": "import styled from 'styled-components/native';",
     "description": "Imports styled-components"
   },
   "importReact": {
@@ -34,54 +19,24 @@
     "body": "import { ${0} } from 'react-native';",
     "description": "Imports React-Native"
   },
-  "importConnect": {
-    "prefix": "imc",
-    "body": "import { connect } from 'react-redux';",
-    "description": "Imports connect from react-redux"
+  "importDispatch": {
+    "prefix": "imd",
+    "body": "import { useDispatch } from 'react-redux';",
+    "description": "Imports dispatch from react-redux"
   },
   "consoleLog": {
     "prefix": "cl",
     "body": "console.log(${0})",
     "description": "Console log"
   },
-  "setState": {
-    "prefix": "ss",
-    "body": "this.setState({ ${0} })",
+  "useState": {
+    "prefix": "usestate",
+    "body": "const [$1, set${1/(^.{0,1})/${1:/upcase}/}] = useState($2)",
     "description": "Set state"
-  },
-  "mapDispatchToProps": {
-    "prefix": "mdtp",
-    "body": "const mapDispatchToProps = dispatch => ({\n\t$0\n});",
-    "description": "mapDispatchToProps"
-  },
-  "mapStateToProps": {
-    "prefix": "mstp",
-    "body": "const mapStateToProps = state => ({\n\t$0\n});",
-    "description": "mapStateToProps"
-  },
-  "mergeProps": {
-    "prefix": "mergeprops",
-    "body": "const mergeProps = (sp, dp, props) => ({\n\t$0\n});",
-    "description": "mergeProps"
-  },
-  "propTypes": {
-    "prefix": "ptp",
-    "body": "import pt from 'prop-types';",
-    "description": "Import prop-types"
-  },
-  "expoVectorIcons": {
-    "prefix": "imicon",
-    "body": "import { ${0} } from '@expo/vector-icons';",
-    "description": "Import @expo/vector-icons"
   },
   "styledTools": {
     "prefix": "imtst",
     "body": "import { theme } from 'styled-tools';",
     "description": "Import { theme } from 'styled-tools'"
-  },
-  "exportConnect": {
-    "prefix": "exportconnect",
-    "body": "export default connect(mapStateToProps, mapDispatchToProps)($0);",
-    "description": "Export default connect from react-redux"
   }
 }
